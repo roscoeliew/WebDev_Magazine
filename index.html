@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dudes Magazine</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import of stylesheet,fonts and icons that are used for the mainpage-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/04f2dafa2d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!----------------------------Navigation Bar----------------------------->
+    <!--Below is my navigation bar which includes a logo text and also navigation text 'Home' and 'Articles'-->
+    <!--Within the articles, there are individual aricles which will pop out when hover over-->
+    <!--fa sharp is icons for the navigation bar and will appear when it is on smaller screen size-->
+    <nav>
+        <a href="index.html"><label class = "logo">Dudes Mag</label> </a>
+        <div class = "nav-links" id = "navLinks">
+            <i class="fa-sharp fa-solid fa-xmark" onclick = "hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>	
+                <li><a href="#">Articles</a>	
+                    <ul>
+                        <li><a href="ChrisHemsworth.html">Chris Hemsworth</a></li>
+                        <li><a href="ChrisEvans.html">Chris Evans</a></li>
+                        <li><a href="TomHolland.html">Tom Holland</a></li>
+                        <li><a href="HughJackman.html">Hugh Jackman</a></li>
+                        <li><a href="ZacEfron.html">Zac Efron</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>      
+
+    <!--This is website name and a short introduction of it-->
+    <div class = "intro">
+        <h1>Dudes Magazine</h1>
+        <p>The only place for the finest men</p>
+    </div>
+
+    <!----------------------------Articles----------------------------->
+    <!--Below are divided into 5 different columns, each column represents different articles-->
+    <!--Each column have an image and a short text of the article-->
+    <!--Texts are all linked to their respective webpage-->
+    <!--Texts will only appear when hover over the image-->
+    <!--There is also a blockquote used, it is to display a quote that was by a famous person-->
+    <!--Alternative text is used on images for screen reader to read-->
+    <section class = "main">
+        <div class = "columns">
+            <div class = "articles">
+                <img src="images/Index/ChrisHemsworth.png" alt = "Chris Hemsworth">
+                <div class = "layer">
+                    <a href="ChrisHemsworth.html"><h3>Chris Hemsworth</h3></a>
+                </div>
+            </div>
+            <div class = "articles">
+                <img src="images/Index/ChrisEvans.jpeg" alt = "Chris Evans">
+                <div class = "layer">
+                    <a href="ChrisEvans.html"><h3>Chris Evans</h3></a>
+                </div>
+            </div>
+            <div class = "articles">
+                <img src="images/Index/TomHolland.jpeg" alt = "Tom Holland">
+                <div class = "layer">
+                    <a href="TomHolland.html"><h3>Tom Holland</h3></a>
+                </div>
+            </div>
+        </div>
+
+        <div class = "columns2">
+            <div class = "articles">
+                <img src="images/Index/HughJackman.jpeg" alt = "Hugh Jackman">
+                <div class = "layer">
+                    <a href="HughJackman.html"><h3>Hugh Jackman</h3></a>
+                </div>
+            </div>
+            <div class="">                  
+                <blockquote>
+                    <p>Be yourself; everyone else is already taken</p>
+                    <br>
+                    <cite>Oscar Wilde</cite> 
+                </blockquote>	          
+            </div>   
+            <div class = "articles">
+                <img src="images/Index/ZacEfron.jpg" alt = "Zac Efron">
+                <div class = "layer">
+                    <a href="ZacEfron.html"><h3>Zac Efron</h3></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--This is a footer that contains the name of the website and also a home button-->
+    <!--Home button is like back to the home mainpage-->
+    <footer>
+        <div class = "footer-contents">
+            <h3>Dudes Magazine</h3>
+                <ul class = "sitemaps">
+                    <li><a href="index.html">Home</a></li>	
+                </ul>
+        </div>
+        <div class = "footer-bottom">
+            <p>© 2023 Copyright | design by yours truly</p>
+        </div>
+    </footer>
+    <!----------------------------JavaScipt----------------------------->
+    <!--When in smaller screens, menu bar will appear and disappear when onclink -->
+    <!--Menu bar will slide left when openging and slide back right when closing-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

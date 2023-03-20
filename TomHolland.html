@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chris Evans</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import of stylesheet,fonts and icons that are used for the webpage-->
+    <link rel="stylesheet" href="TomHolland.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;900&family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04f2dafa2d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!----------------------------Navigation Bar----------------------------->
+    <!--Below is my navigation bar which includes a logo text and also navigation text 'Home' and 'Articles'-->
+    <!--Within the articles, there are individual aricles which will pop out when hover over-->
+    <!--fa sharp is icons for the navigation bar and will appear when it is on smaller screen size-->
+    <nav>
+        <a href="index.html"><label class = "logo">Dudes Mag</label> </a>
+        <div class = "nav-links" id = "navLinks">
+            <i class="fa-sharp fa-solid fa-xmark" onclick = "hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>	
+                <li><a href="#">Articles</a>	
+                    <ul>
+                        <li><a href="ChrisHemsworth.html">Chris Hemsworth</a></li>
+                        <li><a href="ChrisEvans.html">Chris Evans</a></li>
+                        <li><a href="TomHolland.html">Tom Holland</a></li>
+                        <li><a href="HughJackman.html">Hugh Jackman</a></li>
+                        <li><a href="ZacEfron.html">Zac Efron</a></li>
+                    </ul>
+                </li>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>      
+
+    <!----------------------------Articles----------------------------->
+    <!--Images and texts are split into 3 columns-->
+    <!--There are different use of h1, h3, p, ul li for the contents-->
+    <!--Alternative text is used on images for screen reader to read-->
+    <main class = "TomHollandArticle">
+        <article>
+            <div class = "row">
+                <div class = "column">
+                    <img src = "images/TomHolland/TomHolland1.jpg" alt = "Tom Holland">
+                    <div class = "box1">
+                        <h1>Who is Tom Holland?</h1>
+                        <p>Tom Holland is an English actor best known for his portrayal of Peter Parker A.K.A Spider-Man in the Marvel Cinematic University. Beginning his acting career in musicals, Holland’s breakthrough role was in the 2012 thriller ‘The Impossible’, starring Naomi Watts and Ewan McGregor. Holland won a string of awards for his role in the film, including the Hollywood Film Festival Spotlight Award and nominations for best newcomer.</p>
+                        <br>
+                        <p>Moving into the Marvel universe, Holland has starred as Peter Parker, the high-schooler turned friendly neighbourhood Spider-Man, in five Marvel movies to date. Using his athletic background in dance, Tom Holland has transitioned nicely into the Superhero role and gained praise for his athletic prowess by co-stars and producers alike. Natural talent aside, Holland still had to put in some serious work to play the role, including a muscle building diet and gruelling weightlifting circuit</p>
+                    </div>
+                </div>
+                <div class = "column">
+                    <img src = "images/TomHolland/TomHolland2.jpg" alt = "Tom Holland">
+                    <div class = "box2">
+                        <h1>Spiderman Circuit Workout</h1>
+                        <ul>
+                            <li>Deadlifts (8-10 reps)</li>
+                            <li>Incline Press with Pronation (10-12 reps)</li>
+                            <li>Dip Bar Straight Leg Raise (15reps)</li>
+                            <li>Weighted Dips (12-15 reps)</li>
+                            <li>Dumbbell Thrusters (10-12 reps)</li>
+                            <li>Bear Crawls (30 seconds)</li>
+                            <li>Renegade Rows (10-12 reps)</li>
+                            <li>Chin Ups (10-12 reps)</li>
+                            <li>Running</li>
+                        </ul>
+                    </div>
+                </div>  
+                <div class = "column">
+                    <img src = "images/TomHolland/TomHolland3.jpg" alt = "Tom Holland">
+                    <div class = "box3">
+                        <h1>Spirderman Diet</h1>
+                        <p>You can do all the weights in the world, your muscles won’t grow unless you give them the right fuel. In conjunction with his intensive daily workout circuit, Holland had to prioritise his nutrition to ensure he hit his muscle-building goals.</p>
+                        <br>
+                        <p>But on top of the kilo-a-week muscle gain required, Holland also needed to maintain a single figure body fat percentage for key shirtless scenes within the film. To achieve this muscle-building, fat-shredding objective, Holland needed a lean-bulk nutrition plan without enough carbs to fuel his workouts.</p>
+                        <br>
+                        <p>Ashwell chose to build on the actor’s regular diet, adjusting quantities and nutrients as required, rather than prescribe a set meal plan. The result was a ‘two fist’ bulking plan.</p>
+                        <br>
+                        <p>While we don’t know a whole lot about what Tom Holand eats on the daily, it’s fair to say his activity level is extremely high. With a mix of explosive movements and aerobic fitness, the calorie intake has to be significant, with a vast amount of protein filtered throughout. According to Men’s Journal, each meal in the Tom Holland diet plan contained:</p>
+                        <br>
+                        <ul>
+                            <li>Two fist-sized portions of protein</li>
+                            <li>Two fist-sized portions of carbohydrates</li>
+                            <li>Two fists of greens</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!--This is a footer that contains the name of the website and also a home button-->
+    <!--Home button is like back to the home mainpage-->
+    <footer>
+        <div class = "footer-contents">
+            <h3>Dudes Magazine</h3>
+                <ul class = "sitemaps">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+        </div>
+        <div class = "footer-bottom">
+            <p>© 2023 Copyright | design by yours truly</p>
+        </div>
+    </footer>
+    <!----------------------------JavaScipt----------------------------->
+    <!--When in smaller screens, menu bar will appear and disappear when onclink -->
+    <!--Menu bar will slide left when openging and slide back right when closing-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

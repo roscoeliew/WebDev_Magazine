@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chris Evans</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Import of stylesheet,fonts and icons that are used for the webpage-->
+    <link rel="stylesheet" href="ChrisEvans.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;900&family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04f2dafa2d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!----------------------------Navigation Bar----------------------------->
+    <!--Below is my navigation bar which includes a logo text and also navigation text 'Home' and 'Articles'-->
+    <!--Within the articles, there are individual aricles which will pop out when hover over-->
+    <!--fa sharp is icons for the navigation bar and will appear when it is on smaller screen size-->
+    <nav>
+        <a href="index.html"><label class = "logo">Dudes Mag</label> </a>
+        <div class = "nav-links" id = "navLinks">
+            <i class="fa-sharp fa-solid fa-xmark" onclick = "hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>	
+                <li><a href="#">Articles</a>	
+                    <ul>
+                        <li><a href="ChrisHemsworth.html">Chris Hemsworth</a></li>
+                        <li><a href="ChrisEvans.html">Chris Evans</a></li>
+                        <li><a href="TomHolland.html">Tom Holland</a></li>
+                        <li><a href="HughJackman.html">Hugh Jackman</a></li>
+                        <li><a href="ZacEfron.html">Zac Efron</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick = "showMenu()"></i>
+    </nav>      
+
+    <!----------------------------Articles----------------------------->
+    <!--Below an image is used over the entire viewport with the texts on the right-->
+    <!--There are different use of h1, h3, p, ul li for the contents-->
+    <!--Alternative text is used on images for screen reader to read-->
+    <main class = "ChrisEvansArticle">
+        <article>
+            <img src="images/ChrisEvans/ChrisEvans.jpg" alt = "Chris Evans">
+            <h1>Chris Evans</h1>
+            <p class = "lead">Chris Evans' Captain America Training</p>
+            <div class = "article-columns">
+                <p>Here, we'll be exploring the exact workouts that Evans used to gain upper-body brawn and transform from an affable wimp to a villain-crushing, armed-and-dangerous warrior. While impressive, Evans' objective of crafting a frame that would strike fear into even the most wretched Marvel villains was an unenviable one, and would see him supersetting a tough workout with an even more regimented diet plan, making the most of lean protein sources, smart supplementation and a trainer that knew his way around Hollywood's toughest alums.</p><br>
+                <p>As you can expect, the "byproduct of being an athlete" is just wellness shorthand for the end result of months of rigorous training, hundreds of thousands of reps and total commitment to a role. What's more, Evans wasn't equipped with the typical Hollywood-grade training facility loaded with next-gen tech. Instead, his fitness mecca was no more complex than a high street commercial gym or fitness centre. "The gym wasn’t anything too special,” he said in his Men's Health cover interview ahead of Captain America's release. "We would take two muscle groups, whether it was chest and back or biceps and triceps and we would just destroy those muscles, literally, for about two hours. Then we’d cool down with core and abs."</p><br>
+                <p>By hitting the muscle groups from multiple angles, Waterson's smart programming kept Evans' muscles constantly stimulated, leaving no muscle fibre untorn. "I had no idea there were so many ways you could burn yourself out," said Evans of Waterson's muscle alchemy. Even more appealing, however, was the duo's approach to dreaded cardio. Or, more fittingly, the lack of. During his three-month prep to become Captain America — at the start of which, Evans admitted to being "pretty skinny" — he never worked through a jot of cardio. Zilch. Zip. Nada. "If I do cardio I’ll disappear,” he said. "I just needed to gain size." And that, reader, is what he did. Here's how.</p>
+                <div class = "workouts" id = "list">
+                    <p class = "lead">Captain America Shoulders Workout</p>
+                    <ul>
+                        <li>Lateral Raise, 3x15 Reps</li>
+                        <li>Front Raise, 3x15 Reps</li>
+                        <li>Military Press, 3x15 Reps</li>
+                        <li>Reverse Shoulder Fly, 3x15 Reps</li>
+                    </ul>
+                    <p class = "lead">Captain America Legs Workout</p>
+                    <ul>
+                        <li>Barbell Back Squat: 3 sets, 6-8 reps</li>
+                        <li>Barbell Lunge: 3 sets, 6-8 reps</li>
+                        <li>Leg Press: 3 sets, 6-8 reps</li>
+                        <li>Hamstring curl: 3 sets, 6-8 reps</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!--This is a footer that contains the name of the website and also a home button-->
+    <!--Home button is like back to the home mainpage-->
+    <footer>
+        <div class = "footer-contents">
+            <h3>Dudes Magazine</h3>
+                <ul class = "sitemaps">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+        </div>
+        <div class = "footer-bottom">
+            <p>© 2023 Copyright | design by yours truly</p>
+        </div>
+    </footer>
+    <!----------------------------JavaScipt----------------------------->
+    <!--When in smaller screens, menu bar will appear and disappear when onclink -->
+    <!--Menu bar will slide left when openging and slide back right when closing-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
