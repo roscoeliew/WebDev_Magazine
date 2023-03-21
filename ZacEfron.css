@@ -343,6 +343,11 @@ h1
 {
     font-size: 25px;
 }
+
+.layer p
+{
+    font-size: 14.5px;
+}
 .layer ul li
 {
     list-style: circle;
@@ -428,5 +433,21 @@ h1
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+    }
+}
+
+@media(max-width: 2580px)
+{
+    .flex .img2
+    {
+        height: 29vh;
+        display: flex;
+    }
+
+    .flex .img3
+    {
+        height: 41vh;
+        display: flex;
+        object-position: top;
     }
 }
